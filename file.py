@@ -1,0 +1,12 @@
+file = open("demo.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+file = open("demo.txt", "a")
+file.write("\nI am adding additional data without deleting previous text/data")
+file.close()
+file = open("demo.txt", "r")
+content = file.read()
+print(content)
+file.close()
